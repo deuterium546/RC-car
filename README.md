@@ -10,4 +10,6 @@ So I pretty much reversed engineered the remote control that came with my car (k
 2. Because all the hardware was prototyping stuff and it had to be on the car, it was very cumbersome and I didn't really like how it sat on the car
 3. The original reciever is purpose built to do just one thing and so it range is superior to wifi (even though technically they are both 2.4ghz) and there is zero chance of miscommunicating with the ESC and steering servo. Don't have worry about connection issues or IP addresses.
 4.Because I am using the original reciever the car itself is actually unmodified and I know if I stay within the voltages I have measured I will never blow the microcontroller on the RC controller.
+
+
 The STM32L100CDISCO has two 12 bit DACs which I used to replace the potentiometers. The mappings txt file contains the voltages I measured. I just got voltages when the pots were at their max and min and just used a simple line function to get voltages inbetween, using those values to calcuate gradient and offset.
